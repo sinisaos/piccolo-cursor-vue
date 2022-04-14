@@ -71,7 +71,6 @@ export default {
                 .then((res) => {
                     this.tasks = res.data.rows
                     this.cursor = res.headers["next_cursor"]
-                    this.previous = res.headers["no_results"]
                 })
                 .catch((error) => {
                     // eslint-disable-next-line
