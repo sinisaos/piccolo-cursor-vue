@@ -193,7 +193,7 @@ async def delete_task(task_id: int):
 async def open_database_connection_pool():
     try:
         engine = engine_finder()
-        await engine.start_connection_pool(max_size=9)
+        await engine.start_connection_pool()
     except Exception:
         print("Unable to connect to the database")
 
