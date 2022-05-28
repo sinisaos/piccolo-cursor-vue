@@ -6,7 +6,7 @@
             v-for="(item, index) in tasks"
         >
             <h4>
-                <b>{{ item.id }} - {{ item.name }}</b>
+                <b>{{ item.name }} - {{ item.readable }}</b>
             </h4>
             <p class="mb-1">{{ item.completed }}</p>
             <hr />
